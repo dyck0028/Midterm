@@ -1,0 +1,467 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #2f354e;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* General Styling */
+html, body, header {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 321px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* button, button:active, button:focus {
+    outline: none;
+} */
+
+ul, li {
+    list-style: none;
+}
+
+ul li a:not(:hover), .Appstore:not(:hover), .Playstore:not(:hover){
+    transition: .4s;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    height: auto;
+}
+
+span {
+    color: white;
+}
+
+.menu, .nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    justify-content: space-between;
+    margin: 0 41px 0 71px;
+}
+
+.nav-wrapper {
+    width: 580px;
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: 601;
+}
+
+ul li:first-child a {
+    color: #fc5519;
+}
+
+ul li a:hover {
+    color: #a30d0d;
+    transition: .1s;
+}
+
+/* App and image styling */
+#foodapps {
+    background: url('images/Rectangle\ 48.png') no-repeat center top;
+    padding-bottom: 151px;
+}
+
+.foodapps-btn {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.foodapps-content {
+    padding-top: 70px;
+}
+
+.foodapps-txt {
+    color: white;
+}
+
+.foodapps-h1 {
+    font-size: 58px;
+    font-weight: 705;
+    margin: 21px 0 30px;
+}
+
+.foodapps-h4 {
+    font-weight: 505;
+}
+
+
+.Playstore, .Appstore {
+    display: block;
+    height: 68px;
+    width: 236px;
+    background-color: #fc5519;
+    border: 2.1px solid #fc5519;
+    border-radius: 30.5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 15.1px;
+}
+
+/* hover animation for playstore button */
+.Playstore:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    background-color: #a30d0d;
+    border: 2.1px solid #a30d0d;
+    color: white;
+    transition: .2s;
+  }
+
+  /* hover animation for appstore button */
+  .Appstore:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    background-color:  #a30d0d;
+    border: 2.1px solid  #a30d0d;
+    color: white;
+    transition: .1s;
+  }
+
+  
+.Appstore {
+    background-color: none;
+    border: 2.1px solid white;
+    margin-left: 25.5px;
+}
+
+
+/* Phone-screen size styling */
+.mobile {
+    margin-top: -81px;
+    text-align: center;
+}
+
+hr {
+    width: 884px;
+    height: 3px;
+    border: none;
+    margin: 0 auto;
+    background-color: #e1e0e0;
+    margin: 111px auto 0;
+}
+
+/* Account styling */
+.body-title {
+    font-size: 45px;
+    margin-top: 31px;
+    font-weight: 602;
+}
+
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 121px;
+}
+
+.without-fx {
+    display: none;
+}
+
+.body-text {
+    text-align: left;
+    margin-top: 171px;
+}
+
+.body-txt {
+    letter-spacing: 0.2em;
+    text-align: left;
+}
+
+.body-h3 {
+    color: #a30d0d;
+}
+
+.body-h2 {
+    font-size: 41px;
+    margin: 31px 0 41px;
+}
+
+.body-h4 {
+    font-weight: 501;
+    color: #6a6969;
+}
+
+#appstores {
+    background: url('images/Rectangle\ 47.png') no-repeat center top;
+    padding: 121px 0;
+}
+
+.appstores-txt {
+    color: white;
+}
+
+.appstores-h2 {
+    font-size: 41px;
+    font-weight: 701;
+}
+
+.appstores-h4 {
+    font-weight: 501;
+    margin-top: 41px;
+}
+
+/* Footer styling */
+#footer {
+    padding: 21px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.subtitle {
+    font-size: 12px;
+}
+
+ul li .fa {
+    color: #a30d0d;
+    margin-top: 11px;
+    transition: all 0.6s ease;
+}
+
+ul li:hover .fa {
+    color: #a30d0d;
+    transition: all 0.6s ease;
+}
+
+/* adds styling for Media Queries */
+@media (max-width: 1201px) {
+    .container {
+        width: 961px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 731px;
+    }
+    .nav-wrapper {
+        width: 401px;
+    }
+    #app {
+        background-size: auto;
+    }
+    hr {
+        width: 100%;
+    }
+    .body-text {
+        margin-top: 69px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 541px;
+    }
+
+    .menu {
+        display: none;
+    }
+  
+    input + label {
+        position: absolute;
+        margin-top:  -41px;
+        right: 5vh;
+        height: 21.2px;
+        width: 15.2px; 
+        z-index: 5.1;     
+    }
+    label span {
+        position: absolute;
+        width: 100%;
+        height: 2.1px;
+        top: 50%;
+        margin-top: -2.1px;
+        left: 0;
+        display: block;
+        background: black;
+        transition: .6s;
+    }
+    span:first-child {
+        top: 3px; 
+    }
+    span:last-child {
+        top: 16px; 
+    }
+    label:hover {
+        cursor: pointer;
+    }
+    input:checked + label span { 
+        opacity: 0;
+        top: 50%;
+    } 
+    input:checked + label span:first-child {
+        opacity: 1;
+        transform: rotate(410deg);
+    }
+    input:checked + label span:last-child {
+        opacity: 1;
+        transform: rotate(-410deg);
+    }
+    input nav {
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 101px;
+        z-index: 3;
+        transition: .4s;
+        transition-delay: .4s;
+        overflow: hidden;
+    }
+
+
+    input:checked ~ nav { 
+        height: 100%;
+        transition-delay: none;
+        margin-top: -5.2px;
+    }
+    input:checked ~ nav li {
+        display: block;
+        opacity: 1;
+        transition-delay: .4s;
+        background-color: white;
+    }
+    .img-mobile {
+        width: 351px;
+    }
+    .app-h1 {
+        font-size: 35px;
+    }
+    .app-txt {
+        max-width: 561px;
+    }
+    .body-title {
+        font-size: 35px;
+    }
+    .body-content {
+        margin-top: 31px;
+        justify-content: left;
+    }
+    .with-fx {
+        width: 301px;
+    }
+    .body-text {
+        max-width: 251px;
+    }
+    .body-h3 {
+        font-size: 17.5px;
+    }
+    .body-h2 {
+        font-size: 21px;
+    }
+    .body-h4 {
+        font-size: 17.5px;
+    }
+    hr {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #app {
+        height: 100%;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15.5px;
+        padding-left: 15.5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Playstore, .Appstore {
+        height: 41px;
+        width: 131px;
+        padding-top: 7.5px;
+        font-size: 18px;
+    }
+    .img-mobile {
+        width: 301px;
+        margin-top: -61px;
+    }
+    #createaccount, #explore, #delivery {
+        padding-bottom: 41px;
+    }
+    .body-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .body-text {
+        max-width: 321px; 
+    }
+    .with-fx {
+        display: none;
+    }
+    .body-text {
+        margin: 0 auto;
+    }
+    .without-fx {
+        display: block;
+        width: 251px;
+        margin: 0 auto;
+    }
+    .body-h2 {
+        margin: 21px 0 11px;
+    }
+    .body-txt {
+        text-align: center;
+    }
+    #createaccount .body-content, #checkout .body-content {
+        flex-direction: column-reverse;
+    }
+    #appstores {
+        padding: 61px 0;
+    }
+    .appstores-h2 {
+        font-size: 25.5px;
+    }
+    .appstores-h4 {
+        font-size: 18px;
+    }
+    
+    ul li .fa {
+        font-size: 19px;
+    }
+}
+
+/* FAQ page text stlyes */
+
+#faq-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    max-height: 400px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1; 
+}
